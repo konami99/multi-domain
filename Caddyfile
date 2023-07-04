@@ -13,14 +13,12 @@ https:// {
         on_demand
     }
 
-    @ws {
-        header Connection *Upgrade*
-        header Upgrade websocket
-    }
-
     reverse_proxy https://tictactoeonrails.tamsui.xyz {
-        header_down Strict-Transport-Security max-age=31536000;
-        header_up Host {upstream_hostport}
+        header_down Strict-Transport-Security max-age=31536000
+        header_up Host {host}
         header_up X-Forwarded-Host {host}
+        header_up X-Real-IP {remote_host}
+        header_up X-Forwarded-For {remote_host}
+        header_up X-Forwarded-Proto {scheme}
     }
 }

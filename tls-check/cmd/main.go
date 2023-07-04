@@ -7,7 +7,7 @@ import (
 
 func main() {
 
-	allowedDomains := []string{"caddy1.awscustomdomainmanager.xyz", "caddy3.awscustomdomainmanager.xyz"}
+	allowedDomains := []string{"c1.awscustomdomainmanager.xyz", "c2.awscustomdomainmanager.xyz"}
 
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
 

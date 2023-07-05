@@ -1,6 +1,6 @@
 {
     on_demand_tls {
-        ask http://tls-check:5555
+        ask https://ezyraise.ap.ngrok.io
         
         burst 5
         interval 2m

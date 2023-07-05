@@ -7,6 +7,10 @@
     }
 }
 
+:80 {
+    reverse_proxy localhost:2019
+}
+
 https:// {
     tls {
         on_demand
@@ -21,5 +25,3 @@ https:// {
         header_up X-Forwarded-Proto {scheme}
     }
 }
-
-localhost:2019

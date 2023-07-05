@@ -7,7 +7,7 @@
     }
 }
 
-:80 {
+:2019 {
     reverse_proxy localhost:2019
 }
 

@@ -7,7 +7,7 @@
     }
 }
 
-{$ADDRESSES}
+localhost:80
 
 https:// {
     tls {

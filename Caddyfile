@@ -11,7 +11,7 @@
     reverse_proxy localhost:2019
 }
 
-https:// {
+https://c3.awscustomdomainmanager.xyz {
     tls {
         on_demand
     }

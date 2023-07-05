@@ -25,6 +25,8 @@ services:
       - 80:80
       - 443:443
       - 2019:2019
+    environment:
+      - ADDRESSES=:80
     volumes:
       - $PWD/Caddyfile:/etc/caddy/Caddyfile
       - $PWD/site:/srv
